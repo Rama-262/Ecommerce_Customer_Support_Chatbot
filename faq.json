@@ -1,0 +1,79 @@
+[
+  {"question": "How can I track my order?", "answer": "Go to My Orders section and click on track order."},
+  {"question": "Where is my order?", "answer": "You can check your order status in My Orders section."},
+  {"question": "Track my package", "answer": "Use the tracking option in My Orders to track your package."},
+  {"question": "Order tracking", "answer": "Go to My Orders and select track order."},
+
+  {"question": "How do I cancel my order?", "answer": "Go to My Orders and click on cancel order."},
+  {"question": "Cancel my order", "answer": "Open My Orders and choose cancel option."},
+  {"question": "Can I cancel my order?", "answer": "Yes, you can cancel from My Orders before shipping."},
+
+  {"question": "What is the return policy?", "answer": "You can return products within 7 days of delivery."},
+  {"question": "How to return a product?", "answer": "Go to My Orders and select return product option."},
+  {"question": "Return my order", "answer": "Select your order and click on return option."},
+  {"question": "Can I return my product?", "answer": "Yes, return is allowed within 7 days."},
+
+  {"question": "How long does delivery take?", "answer": "Delivery usually takes 3 to 5 business days."},
+  {"question": "Delivery time", "answer": "Orders are delivered within 3 to 5 days."},
+  {"question": "When will I receive my order?", "answer": "You will receive your order within 3 to 5 days."},
+
+  {"question": "What payment methods are available?", "answer": "We accept UPI, debit card, credit card and cash on delivery."},
+  {"question": "Payment options", "answer": "UPI, cards and cash on delivery are available."},
+  {"question": "Can I pay by cash?", "answer": "Yes, cash on delivery is available."},
+  {"question": "Is online payment available?", "answer": "Yes, you can pay using UPI, cards or net banking."},
+
+  {"question": "How to contact customer support?", "answer": "You can contact us via email or helpline number."},
+  {"question": "Customer care number", "answer": "Call our helpline for support."},
+  {"question": "Support contact", "answer": "Reach us through email or phone support."},
+
+  {"question": "How to change delivery address?", "answer": "You can change address before order is shipped."},
+  {"question": "Edit my address", "answer": "Go to settings and update your address."},
+
+  {"question": "Do you provide refund?", "answer": "Yes, refunds are processed within 5 to 7 days."},
+  {"question": "When will I get refund?", "answer": "Refund will be credited within 5 to 7 business days."},
+
+  {"question": "How to login?", "answer": "Click on login and enter your email and password."},
+  {"question": "I forgot my password", "answer": "Click on forgot password and reset it."},
+
+  {"question": "Do you offer free delivery?", "answer": "Free delivery is available on selected orders."},
+  {"question": "Shipping charges", "answer": "Shipping charges depend on order value and location."},
+
+  {"question": "How to place an order?", "answer": "Select product, add to cart and proceed to checkout."},
+  {"question": "Order process", "answer": "Add items to cart and complete payment to place order."},
+
+  {"question": "Can I exchange product?", "answer": "Yes, exchange is available within 7 days."},
+  {"question": "Product exchange", "answer": "You can exchange product from My Orders section."},
+
+  {"question": "Is my payment secure?", "answer": "Yes, all payments are secured with encryption."},
+  {"question": "Payment safety", "answer": "We use secure payment gateways to protect your data."},
+
+  {"question": "Do you have mobile app?", "answer": "Yes, our app is available on Android and iOS."},
+  {"question": "App download", "answer": "Download our app from Play Store or App Store."},
+
+  {"question": "How to check offers?", "answer": "Visit homepage to see latest offers and discounts."},
+  {"question": "Current discounts", "answer": "Check homepage for ongoing deals."},
+
+  {"question": "What if product is damaged?", "answer": "You can request return or replacement."},
+  {"question": "Received damaged product", "answer": "Report it and request replacement."},
+
+  {"question": "Can I change order after placing?", "answer": "Changes are allowed before the order is shipped."},
+  {"question": "Modify my order", "answer": "You can modify order before shipping."},
+
+  {"question": "Do you deliver internationally?", "answer": "Currently we deliver only within the country."},
+  {"question": "International shipping", "answer": "International delivery is not available."},
+
+  {"question": "How to apply coupon?", "answer": "Apply coupon code at checkout page."},
+  {"question": "Discount code not working", "answer": "Ensure the coupon is valid and not expired."},
+
+  {"question": "How to create account?", "answer": "Click on sign up and enter your details."},
+  {"question": "Register account", "answer": "Use sign up option to create new account."},
+
+  {"question": "Can I track multiple orders?", "answer": "Yes, all orders can be tracked in My Orders."},
+  {"question": "View my orders", "answer": "Go to My Orders to see all your orders."},
+
+  {"question": "What is COD?", "answer": "Cash on Delivery means you pay when the product is delivered."},
+  {"question": "Explain cash on delivery", "answer": "You can pay in cash at the time of delivery."},
+
+  {"question": "How to logout?", "answer": "Click logout button in your profile section."},
+  {"question": "Sign out", "answer": "Use logout option to exit your account."}
+]

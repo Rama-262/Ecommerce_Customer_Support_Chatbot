@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>E-commerce Chatbot</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: linear-gradient(to right, #cdd1df, #e9e4ee);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .chat-container {
+            width: 420px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+
+        .chat-header {
+            background: #4a00e0;
+            color: white;
+            padding: 15px;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        .chat-box {
+            height: 350px;
+            padding: 10px;
+            overflow-y: auto;
+            background: #f9f9f9;
+        }
+
+        .message {
+            margin: 8px 0;
+            padding: 10px;
+            border-radius: 8px;
+            max-width: 70%;
+            font-size: 14px;
+        }
+
+        .user {
+            background: #4a00e0;
+            color: white;
+            margin-left: auto;
+            text-align: right;
+        }
+
+        .bot {
+            background: #e0e0e0;
+            color: black;
+            margin-right: auto;
+        }
+
+        .input-area {
+            display: flex;
+            border-top: 1px solid #ccc;
+        }
+
+        input {
+            flex: 1;
+            padding: 12px;
+            border: none;
+            outline: none;
+        }
+
+        button {
+            padding: 12px;
+            border: none;
+            background: #4a00e0;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #3200a8;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="chat-container">
+    
+    <div class="chat-header">
+        🛒 Customer Support Chatbot
+    </div>
+
+   <div class="chat-box" id="chatBox">
+    <div class="message bot">👋 Hello! Welcome to our E-commerce Support.</div>
+    <div class="message bot">How can I help you today?</div>
+</div>
+
+    <div class="input-area">
+        <input type="text" id="userInput" placeholder="Type your message...">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+
+</div>
+
+<script>
+function sendMessage() {
+    let input = document.getElementById("userInput");
+    let message = input.value;
+
+    if (message.trim() === "") return;
+
+    let chatBox = document.getElementById("chatBox");
+
+    // User message
+    chatBox.innerHTML += "<div class='message user'>" + message + "</div>";
+
+    fetch('/get', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({message: message})
+    })
+    .then(res => res.json())
+    .then(data => {
+        chatBox.innerHTML += "<div class='message bot'>" + data.response + "</div>";
+        chatBox.scrollTop = chatBox.scrollHeight;
+    })
+    .catch(err => {
+        chatBox.innerHTML += "<div class='message bot'>Error connecting to server</div>";
+    });
+
+    input.value = "";
+}
+
+// Enter key support
+document.getElementById("userInput").addEventListener("keypress", function(e) {
+    if (e.key === "Enter") {
+        sendMessage();
+    }
+});
+</script>
+
+</body>
+</html>
